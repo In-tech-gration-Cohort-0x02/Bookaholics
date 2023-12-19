@@ -29,7 +29,7 @@ TIP: if you want you can use prefix eg "CSS" or "JS" for branch naming and in yo
 ## Folder Structure
 
   ```md
-  ├── 📁index.html 
+  ├── 📄index.html 
   ├── 📰README.md
   ├── 📰CONTRIBUTING.md
   ├── 📰package.json
