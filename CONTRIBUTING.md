@@ -8,13 +8,22 @@
 
 - `cd Bookaholics`
 
+## Tasks
+
+- Go to issue you were assigned
+- On Right Side go to `Projects` ==> under ***Book Project** turn your task from ***Todo*** to **In Progress** and **Review**
+- always update your task in [here](https://github.com/orgs/In-tech-gration-Cohort-0x02/projects/2)
+- Assign yourself to that task by clicking on "Assignees" and adding your GitHub username if you want to work on some task
+
 ### Branching  
 
-- we will be using branching for every feature and component  
+- we will be using branches for every feature and component  
 - Create a new branch for your changes: `git checkout -b feature-name` (eg `component-footer`, `feature-search-bar`)
 - use descriptive name related to feature/component you are going to add(please try not to use ~~your name~~ and ~~x~~ and ~~y~~)
+  - you can also make branch in by going to issue which you want to work on right panel `Development` ==> `create a branch`
 - make changes in your branch
-- Commit and push your changes and assign to team to review before merging
+- Commit and push your changes
+- create a pull request and and assign to team to review before merging
 TIP: if you want you can use prefix eg "CSS" or "JS" for branch naming and in your commits also
 
 ## Folder Structure
@@ -40,14 +49,14 @@ TIP: if you want you can use prefix eg "CSS" or "JS" for branch naming and in yo
       
   ```
 
-## Javascript
+### Javascript
 
 - All JavaScript code is written inside "js" folder, which further divided into two folders:
   - "app" for small functionalities like fetching data and displaying data eg `book-template.js`
     - you can create any js file in this folder
   - "lib" folder for all the code we use for codrope demos
 
-## CSS
+### CSS
 
 - All Css Files goes in CSS folder which further divided into two folders:
   - "lib": for all codrope style sheets
@@ -59,13 +68,13 @@ TIP: if you want you can use prefix eg "CSS" or "JS" for branch naming and in yo
 - If you decide to use classes use prefix of your task which you are working on eg  `footer-link` `nav-search-button`
 - Avoid tag name like main or section or h1 or p this can mix your styles with other styling or you can also use inline styling in your elements
 
-## HTML
+### HTML
 
 - use Semantic html like  `section` `article` tags for content
 - avoid generic html and use `div` and `span` only for styling purposes
 
-## ASSEts
+### Assets
 
 - Assets includes images that used on pages.
 
-Happy coding
+### Happy coding
