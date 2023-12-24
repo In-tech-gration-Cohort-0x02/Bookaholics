@@ -1,0 +1,83 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+/* contributors section styles*/
+
+@media screen and (max-width: 400px) {
+    #contributors img {
+        scale: 70%;
+    }
+  }
+
+#contributors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contributors article {
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid var(--contributors-main-color);
+    min-width: 23rem;
+    padding: 0.5rem;
+    background: var(--contributors-main-bg-color);
+    background: linear-gradient(90deg, var(--contributors-main-bg-color) 0%, var(--contributors-main-bg-color) 70%, var(--contributors-main-color) 70%, var(--contributors-main-color) 100%);
+}
+
+#contributors article:hover {
+    box-shadow: 0 4px 8px 0 var(--contributors-box-shadow-color), 0 6px 20px 0 var(--contributors-box-shadow-color);
+}
+
+#contributors article .fullname {
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: -0.2rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#contributors article a:hover {
+    text-decoration: underline;
+}
+
+
+#contributors article .division {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    color: gray;
+    margin-bottom: 2.5rem;
+}
+
+#contributors article .division span {
+    color: var(--text-color);
+}
+
+#contributors article ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#contributors img {
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    box-shadow: 0 4px 8px 0 var(--contributors-box-shadow-color), 0 6px 20px 0 var(--contributors-box-shadow-color);
+    /* shape-outside: circle();
+    clip-path: circle(); */
+    /* border: 2px solid white; */
+}
+
+#contributors div {
+    width: 50%;
+}
