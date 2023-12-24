@@ -7,12 +7,6 @@ body {
 
 /* contributors section styles*/
 
-@media screen and (max-width: 400px) {
-    #contributors img {
-        scale: 70%;
-    }
-  }
-
 #contributors {
     display: flex;
     flex-wrap: wrap;
@@ -78,3 +72,9 @@ body {
 #contributors div {
     width: 50%;
 }
+
+@media screen and (max-width: 400px) {
+    #contributors img {
+        scale: 70%;
+    }
+  }
