@@ -11,6 +11,7 @@
 ## Tasks
 
 Assign yourself to that task by clicking on "Assignees" and adding your GitHub username if you decide to work on some task
+
 - Go to issue you were assigned
 - On Right Side go to `Projects` ==> under ***Book Project*** turn your task from ***Todo*** to **In Progress** and **Review**
 - always update your task in [here](https://github.com/orgs/In-tech-gration-Cohort-0x02/projects/2)  
@@ -80,4 +81,9 @@ TIP: if you want you can use prefix eg "CSS" or "JS" for branch naming and in yo
 - Assets includes images that used on pages.
 - Always make sure to use [TINYpng](https://tinypng.com/) to compress the size of your images before you push it
 
-### Happy coding
+### Merging Pull Request
+
+- Always try to pull changes and review them locally
+- If you find any issue/typo ask for changes in pull request before you merge it
+
+### Happy Coding
