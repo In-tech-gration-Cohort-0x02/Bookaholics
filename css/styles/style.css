@@ -73,9 +73,6 @@ body {
     height: 10rem;
     width: 10rem;
     box-shadow: 0 4px 8px 0 var(--contributors-box-shadow-color), 0 6px 20px 0 var(--contributors-box-shadow-color);
-    /* shape-outside: circle();
-    clip-path: circle(); */
-    /* border: 2px solid white; */
 }
 
 #contributors div {

@@ -1,15 +1,15 @@
-function searchBooks (queryString) {
+function searchBooks(queryString) {
     return fetch(`https://www.googleapis.com/books/v1/volumes?maxResults=10&q=${queryString}`)
-        .then((res)=>res.json()) 
-        .then((res)=>res.json()) 
+        .then((res) => res.json())
+        .then((res) => res.json())
 
- 
+
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const $form = document.querySelector("#form"); 
+    const $form = document.querySelector("#form");
     $form.addEventListener("submit", (e) => {
-        e.preventDefault(); 
+        e.preventDefault();
         const queryInput = document.querySelector('#query');
         console.log(queryInput.value);
         const queryString = queryInput.value;
@@ -20,15 +20,20 @@ document.addEventListener("DOMContentLoaded", () => {
 //** contributors section */
 
 /** ### async func get list contributors for repo from github */
-const getContributors = async (repoName) => {  
-    let request = await fetch(`https://api.github.com/repos/${repoName}/contributors`, {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json',
-        }
-    });
+const getContributors = async (repoName) => {
+    let request;
+    try{
+        request = await fetch(`https://api.github.com/repos/${repoName}/contributors`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        });
+    } catch (err){
+        console.error(err);
+    }
 
-    let contributorsList = await request.json();
+    const contributorsList = await request.json();
     console.log(contributorsList);
     return contributorsList;
 }
