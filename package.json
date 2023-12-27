@@ -6,6 +6,9 @@
   "repository": "https://github.com/In-tech-gration-Cohort-0x02/Bookaholics.git",
   "author": "In-tech-gration Cohort 0x02",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint ."
+  },
   "devDependencies": {
     "eslint": "^8.56.0"
   }
