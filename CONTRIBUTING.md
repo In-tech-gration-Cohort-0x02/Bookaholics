@@ -7,6 +7,7 @@
 ### Running the project in development mode  
 
 - `cd Bookaholics`
+- Run `npm install`  to install all dependencies
 
 ## Tasks
 
@@ -34,6 +35,7 @@ TIP: if you want you can use prefix eg "CSS" or "JS" for branch naming and in yo
   ├── 📰README.md
   ├── 📰CONTRIBUTING.md
   ├── 📰package.json
+  ├── 📰.eslintrc.js
   ├── 📂js
        ├── 📂app
           ├── 📄app.js (Main application file where all modules are imported)
@@ -67,7 +69,7 @@ TIP: if you want you can use prefix eg "CSS" or "JS" for branch naming and in yo
 - make sure to use only class and id
 - Try to use ids or combination of selectors so we won't mix our styles
 - If you decide to use classes use prefix of your task which you are working on eg  `footer-link` `nav-search-button`
-- Avoid tag name like `main` or `section` or `h1` or `p` this can mix your styles with other styling
+- Avoid tag name like `main`, `section` , `h1` , `p` , `header` and `footer` for styling this can mix your styles with other styling or you can use combination of selectors `.parent p + p` or `.parent p ~ p`
 - Avoid Inline Styling
 
 ### HTML
@@ -80,6 +82,21 @@ TIP: if you want you can use prefix eg "CSS" or "JS" for branch naming and in yo
 
 - Assets includes images that used on pages.
 - Always make sure to use [TINYpng](https://tinypng.com/) to compress the size of your images before you push it
+
+### Eslint
+
+- Eslint configuration file  `.eslintrc.js`.
+- You will find some following [rules](https://eslint.org/docs/latest/rules/) for this project
+  - `indent: ["error", 2]`,  Use 2 spaces for indentation
+  - `quotes: ["error", "single"]`,  Use single quotes for strings in js
+  - `semi: ["error", "always"]`, Require semicolons at the end of statements
+  - `"no-console": "warn"`, Disallow the use of console (warn instead of error)
+  - `"no-unused-vars": error"`,  Disallow unused variables
+  - `eqeqeq: "error"`,  Require strict equality (===)
+  - `"no-var":"error"`,  Enforce the no-var rule `var` is not allowed
+- you can run `npm lint` or `npx eslint js/app/app.js`
+- Also make sure to install [EsLint Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) to see your errors in run time
+- and fix some errors if you find any in the terminal
 
 ### Merging Pull Request
 
