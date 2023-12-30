@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=
-  , initial-scale=1.0">
+  <meta name="viewport" content="width=, initial-scale=1.0">
   <title>Bookaholics</title>
   <link rel="stylesheet" href="./css/styles/style.css">
   <link rel="stylesheet" href="./css/styles/root.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
+
 <body>
+
   <header>
-    <h1>Bookaholics</h1>
-      <form id="form">
-        <label for="search">Search the site:</label>
-        <input type="search" id="query" name="query" />
-        <button>Search</button>
-      </form>
-    </header> 
+    <section id="logo">
+      <img src="/assets/minimallogo.png" alt="">
+    </section>
+    <form id="form">
+      <input type="search" id="query" name="query" placeholder="search" />
+      <button>Search</button>
+    </form>
+    <ul class="navbar">
+      <li><a href="#"><ion-icon name="home-outline" class="outline"></ion-icon>home</a></li>
+      <li><a href="#"><ion-icon name="book-outline" class="outline"></ion-icon>about</a></li>
+      <li><a href="#"><ion-icon name="people-outline" class="outline"></ion-icon>contributors</a></li>
+      <li><a href="#"><ion-icon name="mail-outline" class="outline"></ion-icon>contact</a></li>
+    </ul>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <script>
+      let menu = document.querySelector('#menu-icon');
+      let navbar = document.querySelector('.navbar');
+
+      menu.onclick = () => {
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('open');
+      }
+    </script>
   </header>
-  <script src="./js/app/app.js"></script>
 </body>
+
 </html>
