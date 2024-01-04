@@ -2,7 +2,7 @@
 
 A book search website that allows you to find books of your interest. You can search by title, author, genre, or keyword and get a list of matching books with their details. ☀️
 
-
+<br/><br/>
 
 **Features 🚀📘**
 
@@ -14,7 +14,7 @@ A book search website that allows you to find books of your interest. You can se
 
 🌐 Collection of data from Google Books API to ensure an extensive and up-to-date catalog.
 
-
+<br/><br/>
 
 **Additional Book Details 📖🔍**
 
@@ -33,28 +33,22 @@ A book search website that allows you to find books of your interest. You can se
 
 + Book Reader Link: Offer a link that directs users to a Google Reader where they can read the book.
 ```
-
+<br/><br/>
 
 **Technologies Used 🛠️**
 
-- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
-- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `#c5f015`
-- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `#1589F0`
+- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `CSS and JavaScript components from  [Codrops](https://github.com/codrops/BookPreview?tab=readme-ov-file).(Please star ✨ [this](https://github.com/codrops/BookBlock) repo)`
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `BookPreview for a visually appealing and interactive user experience.`
+- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `Custom CSS and JavaScript enhancements to tailor the user interface and functionality to the unique offerings of Bookaholics.`
 
-- CSS and JavaScript components from  [Codrops](https://github.com/codrops/BookPreview?tab=readme-ov-file).
-(Please star ✨ [this](https://github.com/codrops/BookBlock) repo)
-
-- BookPreview for a visually appealing and interactive user experience.
-
-- Custom CSS and JavaScript enhancements to tailor the user interface and functionality to the unique offerings of Bookaholics.
-
+<br/><br/>
 
 
 **License 📄✅**
 
 Bookaholics is licensed under the MIT License. See LICENSE file for more details. 🤓✨
 
-
+<br/><br/>
 
 
 **ESLint configuration**
@@ -63,8 +57,7 @@ Bookaholics is licensed under the MIT License. See LICENSE file for more details
 
 - To enable ESLint checking in your JavaScript file, you need to include a special comment at the top of the file that points to your ESLint configuration. This comment is called a "shebang" or "directive comment."
 
-
-
+<br/><br/>
 
 **example**
 
@@ -137,6 +130,7 @@ module.exports = {
 
 };
 
+<br/><br/>
 
 **export**  
 **statement used in Javascript modules to export functions, objects, or primitive values from one module so that they can be used in other programs (using the ‘import’ statement).**
@@ -150,7 +144,7 @@ module.exports = {
 
 If you want to use the import statement in a JavaScript file to import an ESLint configuration that is written as a module, you need to use ECMAScript Modules (ESM).
 
-
+<br/><br/>
 
 **When ESLint runs, it looks for configuration files in the following order:**
 
@@ -240,7 +234,7 @@ Enforces the use of let or const instead of var.
 
 }
 
-
+<br/><br/>
 
 **Insights about the settings**
 
