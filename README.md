@@ -27,7 +27,7 @@ A book search website that allows you to find books of your interest. You can se
 
 # Book Introduction: Include a brief introduction or summary of the book.
 
-@@ Book Subtitle: If applicable, provide the subtitle of the book.
+@@ Book Subtitle: If applicable, provide the subtitle of the book.@@
 
 - ETag and ID: Include unique identifiers for the book.
 
@@ -36,6 +36,10 @@ A book search website that allows you to find books of your interest. You can se
 
 
 **Technologies Used 🛠️**
+
+- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `#c5f015`
+- ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `#1589F0`
 
 - CSS and JavaScript components from  [Codrops](https://github.com/codrops/BookPreview?tab=readme-ov-file).
 (Please star ✨ [this](https://github.com/codrops/BookBlock) repo)
