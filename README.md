@@ -1,8 +1,8 @@
-{📚😊} **Bookaholics**
+# {📚😊} Bookaholics
 
 A book search website that allows you to find books of your interest. You can search by title, author, genre, or keyword and get a list of matching books with their details. ☀️
 
-# Features 🚀📘
+**Features 🚀📘**
 
 🔍 Easy and fast book search.
 
@@ -12,7 +12,7 @@ A book search website that allows you to find books of your interest. You can se
 
 🌐 Collection of data from Google Books API to ensure an extensive and up-to-date catalog.
 
-# Additional Book Details 📖🔍
+**Additional Book Details 📖🔍**
 
 Categories: Specify the genres or categories that the book belongs to.
 
@@ -28,26 +28,26 @@ ETag and ID: Include unique identifiers for the book.
 
 Book Reader Link: Offer a link that directs users to a Google Reader where they can read the book.
 
-# Technologies Used 🛠️
+**Technologies Used 🛠️**
 
 CSS and JavaScript components from  [Codrops](https://github.com/codrops/BookPreview?tab=readme-ov-file).
 Please star ✨ [this](https://github.com/codrops/BookBlock) repo.
 BookPreview for a visually appealing and interactive user experience.
 Custom CSS and JavaScript enhancements to tailor the user interface and functionality to the unique offerings of Bookaholics.
 
-# License 📄✅
+**License 📄✅**
 
 Bookaholics is licensed under the MIT License. See LICENSE file for more details. 🤓✨
 
 
-# ESLint configuration
+**ESLint configuration**
 
 - The ESLint configuration is typically used by development tools and linters during the development process and doesn't need to be included in the actual runtime of your web application.
 
 - To enable ESLint checking in your JavaScript file, you need to include a special comment at the top of the file that points to your ESLint configuration. This comment is called a "shebang" or "directive comment."
 
 
-# example
+**example**
 
 /* eslint-env browser */
 /* eslint-disable quotes */
@@ -76,7 +76,7 @@ Bookaholics is licensed under the MIT License. See LICENSE file for more details
 }
 
 
-# eslintrc.js
+**eslintrc.js**
 
 module.exports = {
 
@@ -119,21 +119,21 @@ module.exports = {
 };
 
 
-# export  
+**export**  
 **statement used in Javascript modules to export functions, objects, or primitive values from one module so that they can be used in other programs (using the ‘import’ statement).**
 
 
-# Module exports 
+**Module exports**
 **the instructions that tell JavaScript which bits of code (functions, objects, strings, etc.) to export from a given file so that other files are allowed to access the exported code.**
 
-# ECMAScript Modules (ESM)
+**ECMAScript Modules (ESM)**
 **specification for using Modules in the Web. It's supported by all modern browsers and the recommended way of writing modular code for the Web.**
 
 If you want to use the import statement in a JavaScript file to import an ESLint configuration that is written as a module, you need to use ECMAScript Modules (ESM).
 
 
 
-# When ESLint runs, it looks for configuration files in the following order:
+**When ESLint runs, it looks for configuration files in the following order:**
 
 .eslintrc.js
 
@@ -148,22 +148,22 @@ If you want to use the import statement in a JavaScript file to import an ESLint
 If you have both .eslintrc.js and .eslintrc.json in your project, ESLint will prioritize the JavaScript configuration.
 
 
-# env:
+**env:**
 
 Specifies the environments in which your code is intended to run.
 configured for 
 - a browser environment  
 - ECMAScript 2022 (es2022).
 
-# extends:
+**extends:**
 
 Uses the "eslint:recommended" configuration as a base. This includes a set of recommended rules by ESLint.
 
-# parserOptions:
+**parserOptions:**
 
 Configures options for the parser. It sets the ECMAScript version to 2022 and specifies the source type as "module," indicating the use of ECMAScript modules.
 
-# rules:
+**rules:**
 
 Defines specific ESLint rules and their configurations:
 
@@ -189,7 +189,7 @@ Requires strict equality (===) instead of loose equality (==).
 Enforces the use of let or const instead of var.
 
 
-# package.json
+**package.json**
 
 {
 
@@ -221,7 +221,7 @@ Enforces the use of let or const instead of var.
 
 }
 
-# Insights about the settings
+**Insights about the settings**
 
 - name:
 
