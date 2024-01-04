@@ -14,7 +14,7 @@ A book search website that allows you to find books of your interest. You can se
 
 🌐 Collection of data from Google Books API to ensure an extensive and up-to-date catalog.
 
-<br/><br/>
+<br/>
 
 **Additional Book Details 📖🔍**
 
@@ -33,7 +33,7 @@ A book search website that allows you to find books of your interest. You can se
 
 + Book Reader Link: Offer a link that directs users to a Google Reader where they can read the book.
 ```
-<br/><br/>
+<br/>
 
 **Technologies Used 🛠️**
 
@@ -41,11 +41,7 @@ A book search website that allows you to find books of your interest. You can se
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `BookPreview for a visually appealing and interactive user experience.`
 - ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `Custom CSS and JavaScript enhancements to tailor the user interface and functionality to the unique offerings of Bookaholics.`
 
-<br/><br/>
-
-
-<br/><br/>
-
+<br/>
 
 **ESLint configuration**
 
@@ -53,7 +49,7 @@ A book search website that allows you to find books of your interest. You can se
 
 - To enable ESLint checking in your JavaScript file, you need to include a special comment at the top of the file that points to your ESLint configuration. This comment is called a "shebang" or "directive comment."
 
-<br/><br/>
+<br/>
 
 **example**
 
@@ -126,7 +122,7 @@ module.exports = {
 
 };
 
-<br/><br/>
+<br/>
 
 **export**  
 **statement used in Javascript modules to export functions, objects, or primitive values from one module so that they can be used in other programs (using the ‘import’ statement).**
@@ -140,7 +136,7 @@ module.exports = {
 
 If you want to use the import statement in a JavaScript file to import an ESLint configuration that is written as a module, you need to use ECMAScript Modules (ESM).
 
-<br/><br/>
+<br/>
 
 **When ESLint runs, it looks for configuration files in the following order:**
 
@@ -230,7 +226,7 @@ Enforces the use of let or const instead of var.
 
 }
 
-<br/><br/>
+<br/>
 
 **Insights about the settings**
 
@@ -280,7 +276,7 @@ npm scripts that can be executed using the npm run command.
 Dependencies that are only needed during development, not in production. 
 Included ESLint as a development dependency. Version is specified.
 
-<br/><br/>
+<br/>
 
 
 **License 📄✅**
