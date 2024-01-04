@@ -96,7 +96,8 @@ TIP: if you want you can use prefix eg "CSS" or "JS" for branch naming and in yo
   - `"no-var":"error"`,  Enforce the no-var rule `var` is not allowed
 - you can run `npm lint` or `npx eslint js/app/app.js`
 - Also make sure to install [EsLint Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) to see your errors in run time
-- and fix some errors if you find any in the terminal
+- run `lint-fix` or `npx eslint js/app/app.js --fix` to fix some errors/warnings automatically or  fix manually 
+
 
 ### Merging Pull Request
 
