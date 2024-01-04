@@ -2,7 +2,7 @@
 
 A book search website that allows you to find books of your interest. You can search by title, author, genre, or keyword and get a list of matching books with their details. ☀️
 
-<br/><br/>
+<br/>
 
 **Features 🚀📘**
 
@@ -43,10 +43,6 @@ A book search website that allows you to find books of your interest. You can se
 
 <br/><br/>
 
-
-**License 📄✅**
-
-Bookaholics is licensed under the MIT License. See LICENSE file for more details. 🤓✨
 
 <br/><br/>
 
@@ -283,3 +279,10 @@ npm scripts that can be executed using the npm run command.
 
 Dependencies that are only needed during development, not in production. 
 Included ESLint as a development dependency. Version is specified.
+
+<br/><br/>
+
+
+**License 📄✅**
+
+Bookaholics is licensed under the MIT License. See LICENSE file for more details. 🤓✨
