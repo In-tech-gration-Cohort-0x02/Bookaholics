@@ -2,6 +2,8 @@
 
 A book search website that allows you to find books of your interest. You can search by title, author, genre, or keyword and get a list of matching books with their details. ☀️
 
+
+
 **Features 🚀📘**
 
 🔍 Easy and fast book search.
@@ -12,32 +14,43 @@ A book search website that allows you to find books of your interest. You can se
 
 🌐 Collection of data from Google Books API to ensure an extensive and up-to-date catalog.
 
+
+
 **Additional Book Details 📖🔍**
 
-Categories: Specify the genres or categories that the book belongs to.
+```diff
+- Categories: Specify the genres or categories that the book belongs to.
 
-PDF Link for Preview: Provide a link for users to preview the book in PDF format.
++ PDF Link for Preview: Provide a link for users to preview the book in PDF format.
 
-Country of Origin: Mention the country where the book originated.
+! Country of Origin: Mention the country where the book originated.
 
-Book Introduction: Include a brief introduction or summary of the book.
+# Book Introduction: Include a brief introduction or summary of the book.
 
-Book Subtitle: If applicable, provide the subtitle of the book.
+@@ Book Subtitle: If applicable, provide the subtitle of the book.
 
-ETag and ID: Include unique identifiers for the book.
+- ETag and ID: Include unique identifiers for the book.
 
-Book Reader Link: Offer a link that directs users to a Google Reader where they can read the book.
++ Book Reader Link: Offer a link that directs users to a Google Reader where they can read the book.
+```
+
 
 **Technologies Used 🛠️**
 
-CSS and JavaScript components from  [Codrops](https://github.com/codrops/BookPreview?tab=readme-ov-file).
-Please star ✨ [this](https://github.com/codrops/BookBlock) repo.
-BookPreview for a visually appealing and interactive user experience.
-Custom CSS and JavaScript enhancements to tailor the user interface and functionality to the unique offerings of Bookaholics.
+- CSS and JavaScript components from  [Codrops](https://github.com/codrops/BookPreview?tab=readme-ov-file).
+(Please star ✨ [this](https://github.com/codrops/BookBlock) repo)
+
+- BookPreview for a visually appealing and interactive user experience.
+
+- Custom CSS and JavaScript enhancements to tailor the user interface and functionality to the unique offerings of Bookaholics.
+
+
 
 **License 📄✅**
 
 Bookaholics is licensed under the MIT License. See LICENSE file for more details. 🤓✨
+
+
 
 
 **ESLint configuration**
@@ -45,6 +58,8 @@ Bookaholics is licensed under the MIT License. See LICENSE file for more details
 - The ESLint configuration is typically used by development tools and linters during the development process and doesn't need to be included in the actual runtime of your web application.
 
 - To enable ESLint checking in your JavaScript file, you need to include a special comment at the top of the file that points to your ESLint configuration. This comment is called a "shebang" or "directive comment."
+
+
 
 
 **example**
@@ -220,6 +235,8 @@ Enforces the use of let or const instead of var.
   }
 
 }
+
+
 
 **Insights about the settings**
 
