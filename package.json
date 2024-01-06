@@ -1,0 +1,16 @@
+{
+  "name": "Bookaholics",
+  "version": "1.0.0",
+  "description": "An App for bookaholics by bookaholics ",
+  "main": "app.js",
+  "repository": "https://github.com/In-tech-gration-Cohort-0x02/Bookaholics.git",
+  "author": "In-tech-gration Cohort 0x02",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "lint-fix": "eslint --fix ."
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  }
+}
