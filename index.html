@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bookaholics</title>
   <link rel="stylesheet" href="./css/styles/style.css">
   <link rel="stylesheet" href="./css/styles/root.css">
@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
   <header>
     <section id="logo">
       <img src="/assets/minimallogo.png" alt="">
@@ -29,16 +28,7 @@
       <li><a href="#"><ion-icon name="mail-outline" class="outline"></ion-icon>contact</a></li>
     </ul>
     <div class="bx bx-menu" id="menu-icon"></div>
-
-    <script>
-      let menu = document.querySelector('#menu-icon');
-      let navbar = document.querySelector('.navbar');
-
-      menu.onclick = () => {
-        menu.classList.toggle('bx-x');
-        navbar.classList.toggle('open');
-      }
-    </script>
+    <script src="js/app/app.js"></script>
   </header>
 </body>
 

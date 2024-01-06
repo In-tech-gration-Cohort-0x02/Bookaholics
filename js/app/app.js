@@ -16,6 +16,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 })
 
+let menu = document.querySelector('#menu-icon');
+      let navbar = document.querySelector('.navbar');
 
+      function toggleWithDelay() {
+        setTimeout(() => {
+          menu.classList.toggle('bx-x');
+        }, 200);
+      }
+      
+      menu.onclick = () => {
+        toggleWithDelay();
+        navbar.classList.toggle('open');
+      }
 
 
