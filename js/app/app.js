@@ -1,21 +1,55 @@
-function searchBooks (queryString) {
-    return fetch(`https://www.googleapis.com/books/v1/volumes?maxResults=10&q=${queryString}`)
-        .then((res)=>res.json()) 
-        .then((res)=>res.json()) 
+  
+  async function searchBooks(queryString) {
+    try {
+      const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${queryString}`);
+      const data = await response.json();
+  
+      for (let i = 0; i < Math.min(10, data.items.length); i++) {
+        const book = data.items[i].volumeInfo;
 
- 
-}
+        
+        const img = book.imageLinks.thumbnail;
+        const authors = book.authors;
+        const title = book.title;
+        const description = getShortDesc(book.description, 10); //get first 10 words
 
-document.addEventListener("DOMContentLoaded", () => {
+        const cardContainer = document.querySelector(".card-container");
+        cardContainer.innerHTML += `
+            <div class="book-card">
+              <img src="${img}" >
+            <div class="book-info">
+              <h2 class="book-author">${authors}</h2>
+              <h3 class="book-title">${title}</h3>
+              <p class="book-description">${description}</div>
+        `
+      }
+    } catch (err) {
+      console.error( err);
+    }
+  }
+
+function getShortDesc(description, wordCount) {
+  if (typeof description === 'string') {
+    const words = description.split(" ");
+    const shortWords = words.slice(0, wordCount);
+    return shortWords.join(" ");
+  } else {
+    return 'No description available';
+  }
+  }
+  
+  document.addEventListener("DOMContentLoaded", () => {
     const $form = document.querySelector("#form"); 
     $form.addEventListener("submit", (e) => {
-        e.preventDefault(); 
+        e.preventDefault();
+        document.querySelector(".card-container").innerHTML = "" 
         const queryInput = document.querySelector('#query');
-        console.log(queryInput.value);
         const queryString = queryInput.value;
+        searchBooks(queryString);
     });
-})
+  })
 
 
+  
 
 
