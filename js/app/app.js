@@ -18,9 +18,9 @@
             <div class="book-card">
               <img src="${img}" >
             <div class="book-info">
-              <h2 class="book-author">${authors}</h2>
-              <h3 class="book-title">${title}</h3>
-              <p class="book-description">${description}</div>
+              <h2 class="book-author">${authors ? authors : "Unknown author"}</h2>
+              <h3 class="book-title">${title ? title : "Unknown title"}</h3>
+              <p class="book-description">${description ? description : "Description unavailable"}</div>
         `
       }
     } catch (err) {
