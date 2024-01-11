@@ -1,6 +1,6 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     list-style: none;
     list-style-type: none;
@@ -8,12 +8,12 @@
 }
 
 header {
-    position:fixed;
-    width:100%;
-    top:0;
-    left:0;
-    z-index:1000;
-    display:flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
@@ -37,12 +37,17 @@ header {
     text-decoration: none;
     color: black;
     font-size: 1.3rem;
-    font-weight:500;
-    padding:20px;
+    font-weight: 500;
+    padding: 20px;
 }
 
 .navbar a:hover {
     color: orangered;
+}
+
+.headerSearchMenu {
+    display: flex;
+
 }
 
 #menu-icon {
@@ -53,36 +58,63 @@ header {
 
     #logo img {
         height: 90px;
-    }    
+    }
 
-#menu-icon {
-   font-size: 2rem;
-   color: black;
-   cursor: pointer;
-   display: block;
+    #form{
+        margin-right: 30px;
+        margin-top: 10px;
+
+    }
     
+    #menu-icon {
+        font-size: 2rem;
+        color: black;
+        cursor: pointer;
+        display: flex;
+        align-self: end;
+        margin-top: 5px;
+
+    }
+
+    .navbar {
+        position: absolute;
+        padding: 0px;
+        top: 65%;
+        right: -100%;
+        width: 250px;
+        height: 25vh;
+        background: rgba(255, 166, 0, 0.521);
+        border-radius: 10px;
+        transition: all 0.7s ease;
+        display: inline-block;
+
+    }
+
+    .navbar.open {
+        right: 12px;
+    }
 }
 
-.navbar{
-    position: absolute;
-    padding: 0px;
-    top: 65%;
-    right: -100%;
-    width: 250px;
-    height: 23vh;
-    background: rgba(255, 166, 0, 0.521);
-    border-radius: 10px;
-    transition: all 0.7s ease;
-    display: inline-block;
-    
-}
 
-.navbar.open {
-    right: 12px;
-}
-}
 
 @media (max-width:600px) {
     #logo img {
-        height: 60px; 
-}}
+        height: 60px;
+    }
+
+    #menu-icon {
+        margin-top: 7.5px;
+
+    }
+
+    .headerSearchMenu {
+        flex-direction: column-reverse;
+        margin-top: 25px;        
+    }
+
+    #form {
+        border: 1px solid red;
+        margin-top: 20px;
+    }
+
+}
