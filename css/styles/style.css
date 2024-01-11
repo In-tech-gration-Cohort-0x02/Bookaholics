@@ -8,37 +8,47 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
-.footer-container {
+.footer-container{
     background-color: #bdced6;
     color: #0b2239;
     padding:0;
     margin:0;
-    box-sizing: border-box;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     font-family: 'Lato', Arial, sans-serif;
 }
-.footer-container-1{
-    justify-content: space-between;
+#footer-main-section{
     display: flex;
-    padding: 0.1rem 3rem;
 }
-
+#footer-section1{
+    flex: 0.5;
+}
+#footer-section2{
+    flex: 3;
+    display: flex;
+    justify-content:space-around
+}
+#footer-section3{
+    display: flex;
+    justify-content: center;
+}
+#footer-links{
+    margin-top: 10px;
+    margin-left: 45px;
+}
 #footer-links ul{
     list-style: none;
     text-transform: uppercase;
     border-left: 2px solid #0b2239;
-    padding-left: 15px;
-    margin-top: 25px;
+    padding-left: 10px;
     letter-spacing: 0.2rem;
-
+    margin-left: 20px;
 }
 #footer-links ul li{
-        padding-bottom: 5px;
-        font-weight: 700;
+    padding-bottom: 5px;
+    font-weight: 700;
 }
 #footer-links ul li:last-child {
     padding-bottom: 0;
@@ -47,18 +57,83 @@
     color: #efeff0;
     cursor: pointer;
 }
+.footer-box{
+    margin-top: 20px;
+    width: 350px;
+    height: 70px;
+    padding: 0.1rem 3rem;
+    /* outline:5px solid rgb(135, 19, 43); */
+    text-align: center;
+}
+.footer-box img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 0 12px 2px #0b2239;
+}
+.footer-box img:hover{
+    transform: scale(1.1);
+    display: inline-block;
+}
+#img-cordrop {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 0 12px 2px #0b2239;
+}
+.footer-box a{
+    color: #0b2239;
+    font-size: 15px;
+    list-style: none;
+    text-transform: uppercase;  
+    font-weight: 700;
+    \font-weight: 700;  
+}
 #footer-copyright {
     color: #0b2239;
     font-weight: 700;
     text-align: center;
-    padding-top: 2px;
-    padding-bottom: 0.5px;
-    margin-bottom: 5px;
+    padding-top: 2px; 
+    padding: 2px;
+    margin-bottom:2px;  
 }
+
 @media screen and (max-width: 1000px) {
     footer div{
         display: flex;
-        flex-direction: column;
         font-size: 12px;
+    }
+    #footer-links{
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    #footer-links ul{
+        margin-top: 0;
+        margin-left: 0;
+        letter-spacing:0.03cm;  
+    }
+    #footer-section2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    #footer-section2 .footer-box{
+        flex: 1;
+        margin: 0;
+        padding:0;
+    }
+    .footer-box {
+        display: flex;
+        align-items: center;
+    }
+    .footer-box img{
+        justify-content: center;
+        margin: 0;
+        width: 50%;
+    }
+    #img-cordrop{
+        width: 50%;
+        justify-content: center;
+        margin: 0;
     }
 }
