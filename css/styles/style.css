@@ -31,6 +31,7 @@ header {
 
 .navbar {
     display: flex;
+    
 }
 
 .navbar a {
@@ -45,14 +46,26 @@ header {
     color: orangered;
 }
 
+
+
 .headerSearchMenu {
     display: flex;
 
 }
 
+span {
+    display: inline;
+    margin-bottom: 20px;
+}
+
 #menu-icon {
     display: none;
 }
+
+#book-search {
+    padding-top: 20px;
+}
+
 
 @media (max-width:1080px) {
 
@@ -60,9 +73,9 @@ header {
         height: 90px;
     }
 
-    #form{
-        margin-right: 30px;
-        margin-top: 10px;
+    #book-search{
+        
+        
 
     }
     
@@ -72,7 +85,7 @@ header {
         cursor: pointer;
         display: flex;
         align-self: end;
-        margin-top: 5px;
+        margin-top: 15px;
 
     }
 
@@ -100,10 +113,12 @@ header {
 @media (max-width:600px) {
     #logo img {
         height: 60px;
+        margin-bottom: 40px;
     }
 
     #menu-icon {
-        margin-top: 7.5px;
+        margin-top: 15px;
+        padding-bottom: 00px;
 
     }
 
@@ -112,9 +127,11 @@ header {
         margin-top: 25px;        
     }
 
-    #form {
-        border: 1px solid red;
-        margin-top: 20px;
+    #book-search{
+        padding-top: 50px;
+        display: flex;
+        margin-left:-265px;
+        
     }
 
 }
