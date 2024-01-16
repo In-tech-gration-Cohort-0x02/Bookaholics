@@ -12,17 +12,17 @@
 .footer-container{
     background-color: #bdced6;
     color: #0b2239;
-    padding:0;
-    margin:0;
     position: fixed;
-    left: 0;
+    margin: 0;
     bottom: 0;
     width: 100%;
     font-family: 'Lato', Arial, sans-serif;
+    outline: solid green;
 }
 
 #footer-main-section{
     display: flex;
+    outline: solid orange;
 }
 
 #footer-section1{
@@ -30,9 +30,11 @@
 }
 
 #footer-section2{
-    flex: 3;
+    flex: 2;
+    
     display: flex;
-    justify-content:space-around
+    justify-content:space-around;
+    outline: solid red;
 }
 
 #footer-section3{
@@ -73,23 +75,21 @@
     width: 350px;
     height: 70px;
     padding: 0.1rem 3rem;
-    /* outline:5px solid rgb(135, 19, 43); */
     text-align: center;
-}
-
-.footer-box img{
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    box-shadow: 0 0 12px 2px #0b2239;
 }
 
 .footer-box img:hover{
     transform: scale(1.1);
     display: inline-block;
 }
+#intech{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 0 12px 2px #0b2239;
+}
 
-#img-cordrop {
+#cordrop {
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -101,8 +101,7 @@
     font-size: 15px;
     list-style: none;
     text-transform: uppercase;  
-    font-weight: 700;
-    \font-weight: 700;  
+    font-weight: 700; 
 }
 
 #footer-copyright {
@@ -131,7 +130,8 @@
     #footer-section2{
         display: flex;
         flex-direction: column;
-        align-items: center;   
+        flex-shrink: 1;
+        
     }
     #footer-section2 .footer-box{
         flex: 1;
@@ -141,15 +141,18 @@
     .footer-box {
         display: flex;
         align-items: center;
-    }
-    .footer-box img{
-        justify-content: center;
+        outline: solid orange;
+       
+    #intech{
+        
+         outline: solid red;
         margin: 0;
-        width: 50%;
+        width: 30%;
     }
-    #img-cordrop{
+    #cordrop{
         width: 50%;
-        justify-content: center;
+        outline: solid red;
         margin: 0;
     }
+}
 }
