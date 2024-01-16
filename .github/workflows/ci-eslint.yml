@@ -1,0 +1,22 @@
+name: front-linter
+on:
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output event data
+        run: echo "${{ toJson(github.event)}}"
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Node setup 
+        uses: actions/setup-node@v4
+      - name: install
+        run: npm ci
+      - name: ESLint
+        run: npm run lint
