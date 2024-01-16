@@ -1,0 +1,8 @@
+:root {
+    --text-color: black;
+
+    /*contributors section vars*/
+    --contributors-main-color: orange;
+    --contributors-main-bg-color: white;
+    --contributors-box-shadow-color: rgba(0, 0, 0, 0.2);
+}
