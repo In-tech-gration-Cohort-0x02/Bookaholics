@@ -77,13 +77,14 @@ body {
     #contributors img {
         scale: 70%;
     }
-  }* {
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
     list-style-type: none;
-
 }
 
 header {
@@ -96,21 +97,16 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-   
+
 }
 
-/*header::before {
-    content: "";
-    position: absolute;
-    background-image: url('../../assets/images/books-shelf.jpg');
-    background-size: cover;
-}*/
+
 
 .backround-header {
     z-index: -1;
-    opacity:0.4;
-    position:absolute;
-    width:100%;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
     height: 100%;
 
 }
@@ -126,14 +122,14 @@ header {
 
 .navbar {
     display: flex;
-    
+
 }
 
 .navbar a {
     text-decoration: none;
     color: black;
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 200;
     padding: 20px;
 }
 
@@ -156,7 +152,7 @@ span {
     #logo img {
         height: 90px;
     }
-   
+
     #menu-icon {
         font-size: 2rem;
         color: black;
@@ -173,7 +169,7 @@ span {
         top: 69%;
         right: -100%;
         width: 200px;
-        height: 27vh;
+        height: 25vh;
         background: rgba(255, 166, 0, 0.521);
         border-radius: 10px;
         transition: all 0.7s ease;
@@ -191,7 +187,7 @@ span {
 @media (max-width:600px) {
     #logo img {
         height: 60px;
-        
+
     }
 
     #menu-icon {
@@ -201,10 +197,10 @@ span {
     }
 
     .navbarSection {
-        padding-bottom:10px;        
-    
+        padding-bottom: 10px;
+
     }
 
-    
+
 
 }
