@@ -157,9 +157,16 @@ body {
         width: unset;
         padding-top: 11px;
         padding-bottom: 5px;
-        outline: solid orange;
         box-sizing: border-box;
         height: unset;
+     }
+
+    #intechgration{
+        width: 30%;
     }
-}
+    
+    #cordrop{
+        width: 30%;
+    }
+
 }
