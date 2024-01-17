@@ -20,7 +20,7 @@
             <div class="book-info">
               <h2 class="book-author">${authors ? authors : "Unknown author"}</h2>
               <h3 class="book-title">${title ? title : "Unknown title"}</h3>
-              <p class="book-description">${description ? description : "Description unavailable"}</div>
+              <p class="book-description">${description ? description + `<a href="/">...read more</a>` : "Description unavailable"}</div>
         `
       }
     } catch (err) {
@@ -39,7 +39,8 @@ function getShortDesc(description, wordCount) {
   }
   
   document.addEventListener("DOMContentLoaded", () => {
-    const $form = document.querySelector("#form"); 
+    const $form = document.querySelector("#form");
+    const $icon = document.querySelector(".search-icon");
     $form.addEventListener("submit", (e) => {
         e.preventDefault();
         document.querySelector(".card-container").innerHTML = "" 
@@ -47,6 +48,13 @@ function getShortDesc(description, wordCount) {
         const queryString = queryInput.value;
         searchBooks(queryString);
     });
+    $icon.addEventListener('click',(e) => {
+      e.preventDefault();
+        document.querySelector(".card-container").innerHTML = "" 
+        const queryInput = document.querySelector('#query');
+        const queryString = queryInput.value;
+        searchBooks(queryString);
+    })
   })
 
 
