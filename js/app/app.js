@@ -44,14 +44,14 @@ function getShortDesc(description, wordCount) {
     $form.addEventListener("submit", (e) => {
         e.preventDefault();
         document.querySelector(".card-container").innerHTML = "" 
-        const queryInput = document.querySelector('#query');
+        const queryInput = document.querySelector('#search');
         const queryString = queryInput.value;
         searchBooks(queryString);
     });
     $icon.addEventListener('click',(e) => {
       e.preventDefault();
         document.querySelector(".card-container").innerHTML = "" 
-        const queryInput = document.querySelector('#query');
+        const queryInput = document.querySelector('#search');
         const queryString = queryInput.value;
         searchBooks(queryString);
     })
