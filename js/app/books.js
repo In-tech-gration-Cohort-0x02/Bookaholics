@@ -178,7 +178,7 @@ const setLoadingScreen = async (data_query) =>{
 }
 
 
-const API_KEY = "AIzaSyCpw-5ZZT6NThNsCL9XPrjTepSPJf_LYF0";
+const API_KEY = "YOUR_KEY";
 const maxResults = 40;
 async function fetchDataAndRender(data_query) {
 	await setLoadingScreen(data_query);
