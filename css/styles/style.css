@@ -21,10 +21,6 @@ body {
   width: 30%;
 }
 
-form label {
-  font-size: 24px;
-  margin-right: 10px;
-}
 
 #search {
     width: 100%;
@@ -37,7 +33,7 @@ form label {
     position: relative;
 }
 
-#query:focus {
+#search:focus {
   border: none;
 }
 
@@ -108,11 +104,6 @@ form label {
     .form-input{
       width: 70%;
     }
-
-    #form label {
-      width: 80%;
-    }
-
 
     .search-icon {
       right: 15px;
