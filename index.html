@@ -1,70 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles/style.css" />
+    <link rel="stylesheet" href="./css/styles/root.css" />
+    <title>Bookaholics - Your Ultimate Book Search Platform</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles/style.css">
-  <link rel="stylesheet" href="./css/styles/root.css">
-  <title>Bookaholics - Your Ultimate Book Search Platform</title>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
 
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-</head>
+  <body>
+    <header>
+      <img
+        class="backround-header"
+        src="./assets/images/books-shelf.jpg"
+        alt="books in shelves"
+      />
+      <section id="logo">
+        <img src="/assets/images/logo.svg" alt="" />
+      </section>
+      <section class="navbarSection">
+        <ul class="navbar">
+          <li>
+            <a href="#"
+              ><ion-icon name="home-outline" class="outline"></ion-icon
+              ><span>home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><ion-icon name="book-outline" class="outline"></ion-icon
+              ><span>about</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><ion-icon name="people-outline" class="outline"></ion-icon
+              ><span>contributors</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><ion-icon name="mail-outline" class="outline"></ion-icon
+              ><span>contact</span></a
+            >
+          </li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </section>
+    </header>
+    <main>
+      <form id="form">
+        <div class="form-input">
+          <input
+            type="search"
+            id="search"
+            name="query"
+            placeholder="Search the Book.."
+          />
+          <ion-icon class="search-icon" name="search-outline"></ion-icon>
+        </div>
+      </form>
+      <div class="card-container"></div>
+      <section id="contributors"></section>
+    </main>
+    <footer class="footer-container">
+      <div id="footer-main-section">
+        <div id="footer-section1">
+          <section id="footer-links">
+            <ul>
+              <li>home</li>
+              <li>about</li>
+              <li>contributors</li>
+              <li>contact</li>
+            </ul>
+          </section>
+        </div>
 
-<body>
-  <header>
-    <img class="backround-header" src="./assets/images/books-shelf.jpg" alt="books in shelves">
-    <section id="logo">
-      <img src="/assets/images/logo.svg" alt="">
-    </section>
-    <section class="navbarSection">
-      <ul class="navbar">
-        <li><a href="#"><ion-icon name="home-outline" class="outline"></ion-icon><span>home</span></a></li>
-        <li><a href="#"><ion-icon name="book-outline" class="outline"></ion-icon><span>about</span></a></li>
-        <li><a href="#"><ion-icon name="people-outline" class="outline"></ion-icon><span>contributors</span></a></li>
-        <li><a href="#"><ion-icon name="mail-outline" class="outline"></ion-icon><span>contact</span></a></li>
-      </ul>
-      <div class="bx bx-menu" id="menu-icon"></div>
-    </section>
-  </header>
+        <div id="footer-section2">
+          <section class="footer-box">
+            <a href="https://intechgration.io/" target="_blank"
+              ><img id="intechgration" src="assets/in-tech-gration.png"
+            /></a>
+          </section>
 
-<div class="card-container"></div>
-  <section id="contributors"></section>
-  <footer class="footer-container">
-    <div id="footer-main-section">
-      <div id="footer-section1">
-        <section id="footer-links">
-          <ul>
-            <li>home</li>
-            <li>about</li>
-            <li>contributors</li>
-            <li>contact</li>
-          </ul>
-        </section>
+          <section class="footer-box">
+            <a href="https://tympanus.net/codrops/" target="_blank"
+              ><img id="cordrop" src="assets/cordrops.png"
+            /></a>
+          </section>
+        </div>
       </div>
 
-      <div id="footer-section2">
-        <section class="footer-box"><a href="https://intechgration.io/" target="_blank"><img id="intechgration"
-              src="assets/in-tech-gration.png"></a>
-        </section>
-
-        <section class="footer-box"><a href="https://tympanus.net/codrops/" target="_blank"><img id="cordrop"
-              src="assets/cordrops.png"></a>
-        </section>
+      <div id="footer-section3">
+        <div id="footer-copyright">&copy;2024 BOOKAHOLICS</div>
       </div>
-    </div>
-
-    <div id="footer-section3">
-      <div id="footer-copyright">&copy;2024 BOOKAHOLICS</div>
-    </div>
-  </footer>
-  <script src="./js/app/app.js"></script>
-</body>
-
-
+    </footer>
+    <script src="./js/app/app.js"></script>
+  </body>
 </html>
-
