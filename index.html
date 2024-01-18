@@ -31,6 +31,11 @@
 
   <link rel="stylesheet" href="./css/styles/style.css">
   <link rel="stylesheet" href="./css/styles/root.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://tympanus.net/Development/BookPreview/css/demo.css'>
+  <link rel='stylesheet' href='https://tympanus.net/Development/BookPreview/css/bookblock.css'>
+  <link rel='stylesheet' href='https://tympanus.net/Development/BookPreview/css/component.css'>
+  <link rel="stylesheet" href="./css/styles/books.css">
 </head>
 <body>
   <header>
@@ -42,12 +47,26 @@
       </form>
 
   </header>
-
+  <main>
+    <div id="scroll-wrap" class="container">     
+      <div class="main">
+        <div id="bookshelf" class="bookshelf">	
+        </div>
+      </div>
+    </div>
+  </main>
   <!-- temlate spacer, remove later -->
   <div style="height: 20rem;"></div>
 
   <section id="contributors"></section>
   
-  <script src="./js/app/app.js"></script>
+  <!--<script type="module" src="./js/app/app.js"></script>-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.3/axios.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://tympanus.net/Development/BookPreview/js/modernizr.custom.js'></script>
+  <script src='https://tympanus.net/Development/BookPreview/js/bookblock.min.js'></script>
+  <script src='https://tympanus.net/Development/BookPreview/js/classie.js'></script>
+  <script src='https://tympanus.net/Development/BookPreview/js/bookshelf.js'></script>
+  <script src="./js/app/books.js"></script>
 </body>
 </html>
