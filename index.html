@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,26 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
+
 <body>
   <header>
-    <h1>Bookaholics</h1>
-   <form id="form">
-          <div class="form-input">
-            <input type="search" id="search" name="query" placeholder="Search the Book.." />
-            <ion-icon class="search-icon" name="search-outline"></ion-icon>
-      </div>
-  </form>
+    <img class="backround-header" src="./assets/images/books-shelf.jpg" alt="books in shelves">
+    <section id="logo">
+      <img src="/assets/images/logo.svg" alt="">
+    </section>
+    <section class="navbarSection">
+      <ul class="navbar">
+        <li><a href="#"><ion-icon name="home-outline" class="outline"></ion-icon><span>home</span></a></li>
+        <li><a href="#"><ion-icon name="book-outline" class="outline"></ion-icon><span>about</span></a></li>
+        <li><a href="#"><ion-icon name="people-outline" class="outline"></ion-icon><span>contributors</span></a></li>
+        <li><a href="#"><ion-icon name="mail-outline" class="outline"></ion-icon><span>contact</span></a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </section>
   </header>
 
 <div class="card-container"></div>
@@ -53,6 +64,7 @@
   </footer>
   <script src="./js/app/app.js"></script>
 </body>
+
 
 </html>
 
