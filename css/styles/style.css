@@ -6,6 +6,10 @@ body {
   margin: 0 auto;
   padding: 3rem;
 }
+
+
+
+
 /* contributors section styles*/
 
 #contributors {
@@ -201,9 +205,7 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-  body {
-    padding: 0;
-  }
+  
 
   footer div {
     display: flex;
@@ -256,12 +258,7 @@ body {
     width: 30%;
   }
 }
-body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
+
 
 #form {
     padding: 10px;

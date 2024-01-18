@@ -6,21 +6,22 @@
   <link rel="stylesheet" href="./css/styles/style.css">
   <link rel="stylesheet" href="./css/styles/root.css">
   <title>Bookaholics - Your Ultimate Book Search Platform</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </head>
 <body>
   <header>
     <h1>Bookaholics</h1>
-    <form id="book-search">
-      <label for="search">Search the site:</label>
-      <input type="search" id="search" name="search" />
-      <button  id="submit-form">Search</button>
-    </form>
-    <link rel="stylesheet" href="./css/styles/style.css">
+   <form id="form">
+          <div class="form-input">
+            <input type="search" id="search" name="query" placeholder="Search the Book.." />
+            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+      </div>
+  </form>
   </header>
 
-  <!-- temlate spacer, remove later -->
-  <div style="height: 20rem;"></div>
-
+<div class="card-container"></div>
   <section id="contributors"></section>
   <footer class="footer-container">
     <div id="footer-main-section">
