@@ -30,6 +30,8 @@ The Books API is a way to search and access that content, as well as to create a
 - [Leonalkalai](https://github.com/leonalkalai)
 - [Ozgurozbekuki](https://github.com/ozgurozbekuk)
 - [Alkozp](https://github.com/alkozp)
+- [Amlima1](https://github.com/Amlima1)
+- [Behsolo](https://github.com/Behsolo)
 
 
 
