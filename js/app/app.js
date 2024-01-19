@@ -104,6 +104,28 @@ const getContributors = async (repoName) => {
   return contributorsList;
 };
 
+/** ### async func get user from github */
+const getGitUser = async (gitName) => {
+  let request;
+  try {
+    request = await fetch(
+      `https://api.github.com/users/${gitName}`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+  } catch (err) {
+    console.error(err);
+  }
+
+  const contributorsList = await request.json();
+  console.log(contributorsList);
+  return contributorsList;
+};
+
 //** ### fill template with contributor data */
 const addArticleGitContributors = (contributor) => {
   const articleTemplate = `
@@ -135,6 +157,9 @@ const appendGitContributors = async () => {
   result.forEach((element) => {
     allArticles += addArticleGitContributors(element);
   });
+
+  allArticles += addArticleGitContributors(await getGitUser('Amlima1'));
+  allArticles += addArticleGitContributors(await getGitUser('Behsolo'));
 
   sectionContributors.innerHTML = allArticles;
 };
